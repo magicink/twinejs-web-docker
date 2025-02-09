@@ -14,6 +14,9 @@ RUN curl -s https://api.github.com/repos/klembot/twinejs/releases/latest \
     && unzip twinejs-web.zip \
     && rm twinejs-web.zip
 
+# move the files from "web/" to the root of the working directory
+RUN mv web/* . \
+    && rm -rf web
 
 RUN npm install --global http-server
 
