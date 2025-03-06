@@ -1,4 +1,4 @@
-FROM node:lts-alpine
+FROM oven/bun:alpine
 LABEL authors="Brandon Tom <magicink@gmail.com>"
 
 # Install curl, jq, and unzip
@@ -14,11 +14,11 @@ RUN curl -s https://api.github.com/repos/klembot/twinejs/releases/latest \
     && unzip twinejs-web.zip \
     && rm twinejs-web.zip
 
-# move the files from "web/" to the root of the working directory
+# Move the files from "web/" to the root of the working directory
 RUN mv web/* . \
     && rm -rf web
 
-RUN npm install --global http-server
+RUN bun add --global http-server
 
 VOLUME [ "/var/www" ]
 
