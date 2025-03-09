@@ -46,4 +46,4 @@ jobs:
           push: true
           tags: |
             ghcr.io/${{ github.repository_owner }}/twinejs-docker:latest
-            ghcr.io/${{ github.repository_owner }}/twinejs-docker:${{ env.VERSION }}
+            ghcr.io/${{ github.repository_owner }}/twinejs-docker:${{ env.VERSION || 'latest' }}
