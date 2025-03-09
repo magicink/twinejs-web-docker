@@ -4,7 +4,7 @@ This Docker container automates the setup for running the latest web version of 
 
 ## Features
 
-- **Lightweight**: Utilizes `node:lts-alpine` for a minimal footprint.
+- **Lightweight**: Utilizes `oven/bun:alpine` for a minimal footprint.
 - **Automated Updates**: Fetches the latest TwineJS web version directly from GitHub releases.
 - **Simplicity**: Serves TwineJS using `http-server` on port 8080.
 
