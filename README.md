@@ -1,6 +1,6 @@
 # TwineJS Docker Container
 
-This Docker container automates the setup for running the latest web version of TwineJS, using `node:lts-alpine` as the base image. It's designed to be lightweight and easy to deploy.
+This Docker container automates the setup for running the latest web version of TwineJS, using `oven/bun:alpine` as the base image. It's designed to be lightweight and easy to deploy.
 
 ## Features
 
