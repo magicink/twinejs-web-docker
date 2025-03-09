@@ -24,4 +24,4 @@ VOLUME [ "/var/www" ]
 
 EXPOSE 8080
 
-ENTRYPOINT ["http-server", "-p", "8080"]
+ENTRYPOINT ["http-server", "-p", "8080", "--brotli"]
